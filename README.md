@@ -1,5 +1,13 @@
 # react spa starter
 
+## features
+
+1. react
+2. ei: [efe isomorphic framework](https://github.com/jinzhubaofu/ei)
+3. melon: [react ui comopents](https://github.com/react-melon/melon)
+4. numen: [Manage history like a boss](https://github.com/jinzhubaofu/numen)
+5. react hot reload
+
 ## setup
 
 1. `git clone` or download zip
