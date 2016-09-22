@@ -1,0 +1,62 @@
+{
+  "name": "react-spa-starter",
+  "version": "1.0.0",
+  "description": "a spa project starter including react / ei / melon / numen / hot reload",
+  "main": "index.js",
+  "scripts": {
+    "lint": "fecs src --rule --reporter=baidu",
+    "start": "webpack-dev-server --config=tools/webpack.dev.js",
+    "build": "npm run clean && webpack --config=tools/webpack.prod.js",
+    "build-manifest": "rimraf webpack-manifest && webpack --config=tools/webpack.inf.config.js",
+    "clean": "rimraf output",
+    "postinstall": "npm run build-manifest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinzhubaofu/react-spa-starter.git"
+  },
+  "keywords": [
+    "react-starter"
+  ],
+  "pre-commit": [
+      "lint"
+  ],
+  "author": "ludafa@outlook.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jinzhubaofu/react-spa-starter/issues"
+  },
+  "homepage": "https://github.com/jinzhubaofu/react-spa-starter#readme",
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2015-loose": "^7.0.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-1": "^6.5.0",
+    "css-loader": "^0.24.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "fecs": "^0.8.7",
+    "file-loader": "^0.9.0",
+    "html-webpack-harddisk-plugin": "0.0.2",
+    "html-webpack-plugin": "^2.22.0",
+    "json-loader": "^0.5.4",
+    "nib": "^1.1.0",
+    "pre-commit": "^1.1.3",
+    "react-hot-loader": "^1.3.0",
+    "rimraf": "^2.5.4",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.2",
+    "stylus-loader": "^2.1.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.15.0"
+  },
+  "dependencies": {
+    "ei": "^1.3.10",
+    "melon": "^0.3.5",
+    "numen": "^0.2.0",
+    "react-addons-update": "^0.14.8",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "melon": [
+        "melon/Button",
+        "melon/Card",
+        "melon/Select",
+        "melon/Progress",
+        "melon/Slider",
+        "melon/Zippy",
+        "melon/BoxGroup",
+        "melon/Pager",
+        "melon/SnackBar",
+        "melon/Toggle",
+        "melon/Alert",
+        "melon/Confirm",
+        "melon/Dialog",
+        "melon/TextBox",
+        "melon/Link",
+        "melon/Title",
+        "melon/Tooltip",
+        "melon/Uploader",
+        "melon/Table",
+        "melon-core/Form"
+    ],
+    "numen": [
+        "numen/HashLocator"
+    ]
+}
